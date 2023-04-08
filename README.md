@@ -1,21 +1,22 @@
-# Otp.NET
+# Otp.NETCore
+
+Original implementation from [Kyle Spearrin](https://github.com/kspearrin)'s [Otp.NET](https://github.com/kspearrin/Otp.NET)
 
 An implementation TOTP [RFC 6238](http://tools.ietf.org/html/rfc6238) and HOTP [RFC 4226](http://tools.ietf.org/html/rfc4226) in C#.
 
-[![Build status](https://ci.appveyor.com/api/projects/status/renwlv60h7cfxs34?svg=true)](https://ci.appveyor.com/project/kspearrin/otp-net)
 
 ## Get it on NuGet
 
-https://www.nuget.org/packages/Otp.NET
+https://www.nuget.org/packages/DavisSoftwareConsulting.Otp.NetCore
 
 ```powershell
-Install-Package Otp.NET 
+Install-Package DavisSoftwareConsulting.Otp.NetCore
 ```
 
 or
 
 ```bash
-dotnet add package Otp.NET
+dotnet add package DavisSoftwareConsulting.Otp.NetCore
 ```
 
 ## Documentation
@@ -34,7 +35,7 @@ TOTP is an algorithm that uses a rolling window of time to calculate single use 
 Use of the library is fairly straightforward.  There is a class called Totp.  Simply create a new instance of it and pass in the shared secret key in plaintext as a byte array.
 
 ```c#
-using OtpNet;
+using Otp.NETCore;
 ```
  
 ```c#
@@ -173,10 +174,7 @@ In addition to TOTP, this library implements HOTP (counter based) code calculati
 #### Creation of an HOTP object
 
 ```c#
-using OtpNet;
-```
-
-```c#
+using Otp.NETCore;
 var hotp = new Hotp(secretKey);
 ```
 

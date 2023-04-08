@@ -9,7 +9,7 @@
         <RootNamespace>Otp.NETCore</RootNamespace>
         <ApplicationIcon>../../icon.ico</ApplicationIcon>
         
-        <PackageId>Otp.NETCore</PackageId>
+        <PackageId>DavisSoftwareConsulting.Otp.NETCore</PackageId>
         <Title>Otp.NETCore</Title>
         <Authors>Kyle Spearrin, Braydon Davis</Authors>
         <Copyright>Kyle Spearrin</Copyright>
