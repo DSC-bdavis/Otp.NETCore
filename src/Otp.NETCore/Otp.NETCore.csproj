@@ -5,7 +5,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <Version>1.3.0</Version>
-        <SignAssembly>true</SignAssembly>
+        <SignAssembly>False</SignAssembly>
         <RootNamespace>Otp.NETCore</RootNamespace>
         <ApplicationIcon>../../icon.ico</ApplicationIcon>
         
@@ -13,11 +13,11 @@
         <Title>Otp.NETCore</Title>
         <Authors>Kyle Spearrin, Braydon Davis</Authors>
         <Copyright>Kyle Spearrin</Copyright>
-        <RepositoryUrl>https://github.com/kspearrin/Otp.NET</RepositoryUrl>
+        <RepositoryUrl>https://github.com/DSC-bdavis/Otp.NETCore</RepositoryUrl>
         
-        <PackageProjectUrl>https://github.com/kspearrin/Otp.NET</PackageProjectUrl>
-        <PackageLicenseFile>../../LICENSE.txt</PackageLicenseFile>
-        <PackageReadmeFile>../../README.md</PackageReadmeFile>
+        <PackageProjectUrl>https://github.com/DSC-bdavis/Otp.NETCore</PackageProjectUrl>
+        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageTags>otp,totp,hotp,2fa,two factor</PackageTags>
         
         <Description>
@@ -25,9 +25,29 @@
             For documentation and examples visit the project website on GitHub at https://github.com/kspearrin/Otp.NET
         </Description>
         <Summary>An implementation of TOTP which is commonly used for multi factor authentication.</Summary>
+        <GenerateDocumentationFile>False</GenerateDocumentationFile>
+        <PackageIcon>icon.png</PackageIcon>
+        <PackageOutputPath>$(OutputPath)</PackageOutputPath>
+        <IncludeSymbols>True</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     </PropertyGroup>
 
     <ItemGroup>
-        <Content Include="icon.png" />
+      <None Include="..\..\LICENSE.txt">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+      <None Include="..\..\README.md">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="icon.png">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
     </ItemGroup>
 </Project>

@@ -78,7 +78,6 @@ namespace Otp.NETCore
         /// <summary>
         /// Takes a counter and then computes a HOTP value
         /// </summary>
-        /// <param name="timestamp">The timestamp to use for the HOTP calculation</param>
         /// <param name="counter"></param>
         /// <returns>a HOTP value</returns>
         public string ComputeHOTP(long counter) => Compute(counter, _hashMode);
