@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Version>1.3.0</Version>
+        <SignAssembly>true</SignAssembly>
+        <RootNamespace>Otp.NETCore</RootNamespace>
+        <ApplicationIcon>../../icon.ico</ApplicationIcon>
+        
+        <PackageId>Otp.NETCore</PackageId>
+        <Title>Otp.NETCore</Title>
+        <Authors>Kyle Spearrin, Braydon Davis</Authors>
+        <Copyright>Kyle Spearrin</Copyright>
+        <RepositoryUrl>https://github.com/kspearrin/Otp.NET</RepositoryUrl>
+        
+        <PackageProjectUrl>https://github.com/kspearrin/Otp.NET</PackageProjectUrl>
+        <PackageLicenseFile>../../LICENSE.txt</PackageLicenseFile>
+        <PackageReadmeFile>../../README.md</PackageReadmeFile>
+        <PackageTags>otp,totp,hotp,2fa,two factor</PackageTags>
+        
+        <Description>
+            An implementation of TOTP and HOTP which are commonly used for multi factor authentication by using a shared key between the client and the server to generate and verify one time use codes.
+            For documentation and examples visit the project website on GitHub at https://github.com/kspearrin/Otp.NET
+        </Description>
+        <Summary>An implementation of TOTP which is commonly used for multi factor authentication.</Summary>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="icon.png" />
+    </ItemGroup>
+</Project>
